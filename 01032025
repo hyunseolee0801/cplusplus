@@ -22,3 +22,49 @@ int main()
   
   cout << "The result is " << output;
 }
+
+
+-------------------------------------------------------
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+string gostop(string gender, bool ready){
+ string output;
+ output = "I am a " + gender;
+ 
+ if(ready){
+   cout << output;
+ }
+ 
+ return output;
+}
+
+
+int main()
+{ 
+  
+  string gender;
+  cout << "What is your gender? " ;
+  getline(cin, gender);
+  
+  cout << "Are you ready to date? input (Yes/No)" ;
+  
+  string yesno;
+  cin >> yesno;
+  bool test;
+  
+  if (yesno == "Yes"){
+      test = 1;
+  }
+  else{
+      test = 0;
+  }
+  
+  gostop(gender, test);
+//  cout << result;
+  
+  return 0;
+}
