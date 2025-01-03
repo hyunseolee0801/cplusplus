@@ -1,0 +1,24 @@
+#File Today
+
+#Adding Strings
+
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+  string gender;
+  cout << "First Output: ";
+  cin >> gender;
+  
+  string ready;
+  cout << "Second Output: ";
+  cin >> ready;
+  
+  string output;
+  output = gender + " " + ready;
+  
+  cout << "The result is " << output;
+}
